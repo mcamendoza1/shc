@@ -35,7 +35,8 @@ import org.apache.hadoop.hbase.mapreduce.TableOutputFormat
 import org.apache.hadoop.hbase.util.Bytes
 import org.apache.hadoop.hbase._
 import org.apache.hadoop.mapreduce.Job
-import org.apache.spark.Logging
+//import org.apache.spark.Logging
+import org.apache.spark.sql.execution.datasources.util.Logging
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.sources._
 import org.apache.spark.sql.types._

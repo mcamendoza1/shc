@@ -27,7 +27,8 @@ import org.json4s.jackson.JsonMethods._
 
 import org.apache.avro.Schema
 import org.apache.hadoop.hbase.util.Bytes
-import org.apache.spark.Logging
+//import org.apache.spark.Logging
+import org.apache.spark.sql.execution.datasources.util.Logging
 import org.apache.spark.sql.SQLContext
 import org.apache.spark.sql.catalyst.util.DataTypeParser
 import org.apache.spark.sql.types._

@@ -31,7 +31,8 @@ import org.apache.hadoop.hbase.{HConstants, TableName}
 import org.apache.hadoop.hbase.client._
 import org.apache.hadoop.hbase.ipc.RpcControllerFactory
 import org.apache.hadoop.hbase.security.{User, UserProvider}
-import org.apache.spark.Logging
+//import org.apache.spark.Logging
+import org.apache.spark.sql.execution.datasources.util.Logging
 
 private[spark] object HBaseConnectionCache extends Logging {
 
