@@ -5,3 +5,12 @@
 # Maven
 target/
 
+.metals/
+.project
+.settings/
+core/.classpath
+core/.project
+core/.settings/
+examples/.classpath
+examples/.project
+examples/.settings

@@ -28,7 +28,7 @@
   </parent>
   <groupId>com.hortonworks</groupId>
   <artifactId>shc</artifactId>
-  <version>1.1.2-1.6-s_2.10-SNAPSHOT</version>
+  <version>1.2.0-1.6-s_2.10-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>HBase Spark Connector Project Parent POM</name>
   <url>https://github.com/hortonworks-spark/shc</url>
@@ -42,9 +42,9 @@
   </distributionManagement> 
 
   <properties>
-    <spark.version>1.6.3</spark.version>
-    <hbase.version>1.1.2</hbase.version>
-    <phoenix.version>4.9.0-HBase-1.1</phoenix.version>
+    <spark.version>1.6.0-cdh5.8.4</spark.version>
+    <hbase.version>1.2.0-cdh5.8.4</hbase.version>
+    <phoenix.version>4.9.0-HBase-1.2</phoenix.version>
     <test_classpath_file>${project.build.directory}/spark-test-classpath.txt</test_classpath_file>
     <java.version>1.7</java.version>
     <scala.version>2.10.5</scala.version>
@@ -87,6 +87,11 @@
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
+    </repository>
+    <!-- Cloudera Repo -->
+    <repository>
+      <id>cloudera</id>
+      <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
     </repository>
   </repositories>
 
@@ -184,7 +189,7 @@
   </build>
 
   <profiles>
-    <profile>
+ <!--   <profile>
       <id>scala-2.11</id>
       <activation>
         <property><name>!scala-2.10</name></property>
@@ -194,7 +199,7 @@
         <scala.macros.version>2.1.0</scala.macros.version>
         <scala.binary.version>2.11</scala.binary.version>
       </properties>
-    </profile>
+    </profile> -->
     <profile>
       <id>scala-2.10</id>
       <activation>
